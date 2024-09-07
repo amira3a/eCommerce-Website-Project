@@ -1,0 +1,121 @@
+.footer{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    padding: 0px 7%;
+}
+.footerTop{
+    display: flex;
+    justify-content: space-between;
+}
+.footerLogo{
+    display: flex;
+    flex-direction: column;
+    gap: 85px;
+}
+.footerLogo h3{
+    margin: 0;
+    font-family: "Poppins-Bold";
+    font-size: 24px;
+    color: #000000;
+}
+.footerLogo p{
+    width: 83%;
+    height: 72px;
+    font-family: "Poppins-Regular";
+    color: #9f9f9f;
+    font-size: 16px;
+}
+.footerLinks{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    font-family: "Poppins-Medium";
+    color: #000000;
+    font-size: 16px;
+    gap: 70px;
+}
+.footerLinks h3{
+    font-family: "Poppins-Medium";
+    color: #9f9f9f;
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.footerLinks li{
+    cursor: pointer;
+}
+.footerLinks a{
+    text-decoration: none;
+    color: #000000;
+}
+.newsletter h3{
+    font-family: "Poppins-Medium";
+    color: #9f9f9f;
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 80px;
+}
+.form{
+    display: flex;
+    width: 286px;
+    justify-content: space-between;
+}
+.input{
+    width: 200px;
+    border: none;
+    border-radius: none;
+    border-bottom: 1px solid #000000;
+}
+.input::placeholder{
+    font-family: "Poppins-Regular";
+    font-size: 14px;
+}
+.sub{
+    width: 75px;
+    font-family: "Poppins-Medium";
+    font-size: 14px;
+    padding: 0px;
+    margin: 0;
+    color: #000000;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #000000;
+}
+.footerCopyright{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    width: 100%;
+    margin-bottom: 30px;
+    font-family: "Poppins-Regular";
+    color: #000000;
+    font-size: 16px;
+}
+.footerCopyright hr{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    height: 1px;
+    background: #d9d9d9;
+}
+
+@media only screen and (max-width:850px){
+    .newsletter{
+        position: absolute;
+        top: 250px;
+    }
+    .form{
+        flex-direction: column;
+        gap: 20px;
+        width: auto;
+    }
+    .input{
+    width: 110px;
+}
+}

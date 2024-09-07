@@ -1,0 +1,131 @@
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 180px;
+  }
+  .info h2{
+    font-family: "Poppins-SemiBold";
+    font-size: 36px;
+    color: #000000;
+    margin: 0;
+  }
+  .info p{
+    font-family: "Poppins-Regular";
+    font-size: 16px;
+    color: #9f9f9f;
+    width: 644px;
+    text-align: center;
+    margin: 0;
+  }
+  .container {
+    display: flex;
+    justify-content: space-around;
+    /* gap: 80px; */
+    padding: 0px 13.9%;
+  }
+  .contactDetails {
+    width: 253px;
+    padding: 0px 30px;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+  }
+  .topTitle{
+    position: relative;
+  }
+  .title{
+    position: absolute;
+    left: -50px;
+  }
+  .contactDetails label{
+    font-family: "Poppins-Medium";
+    font-size: 24px;
+    color: #000000;
+  }
+  .contactDetails p{
+    font-family: "Poppins-Regular";
+    font-size: 16px;
+    color: #000000;
+    margin: 0;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .inputGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .inputGroup input{
+    width: 520px;
+    height: 70px;
+    border: 1px solid #9f9f9f;
+    border-radius: 10px;
+  }
+  .inputGroup input::placeholder{
+    font-family: "Poppins-Regular";
+    font-size: 16px;
+    color: #9f9f9f;
+    padding-left: 20px;
+  }
+  .inputGroup textarea{
+    width: 520px;
+    height: 115px;
+    border: 1px solid #9f9f9f;
+    border-radius: 10px;
+  }
+  .inputGroup textarea::placeholder{
+    font-family: "Poppins-Regular";
+    font-size: 16px;
+    color: #9f9f9f;
+    padding: 20px;
+  }
+  .errorText {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  .submitButton {
+    background-color: #b88e2f;
+    color: #ffffff;
+    font-family: "Poppins-Regular";
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    width: 237px;
+    height: 55px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+@media only screen and (max-width:850px){
+  .info p{
+    width: auto;
+  }
+.container {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 20px;
+  }
+  .contactDetails{
+    width: 70%;
+    align-items: start;
+  }
+  .form {
+    width: 90%;
+  }
+  .inputGroup input{
+    width: 99%;
+    
+  }
+  .inputGroup textarea{
+    width: 99%;
+  }
+}

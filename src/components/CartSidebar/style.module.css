@@ -1,0 +1,165 @@
+.cartitems {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 360px; 
+  height: 68.6%;
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(100%); 
+}
+
+
+.cartitemsVisible {
+  transform: translateX(0); 
+}
+.cartitemsCloseIcon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  width: 17px;
+  height: 13px;
+}
+
+.cartitemsCloseIcon:hover {
+  opacity: 0.7;
+}
+
+.cartitemsFormatMain {
+  font-family: "Poppins-SemiBold";
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.hr{
+  border: none;
+  border-top:1px solid #d9d9d9;
+  border-radius: none;
+  margin: 40px 0;
+  margin-top: 0;
+}
+
+.carticonProductIcon {
+  width: 108px;
+  height: 105px;
+  object-fit: cover;
+  margin-right: 15px;
+  border-radius: 8px;
+}
+
+
+.cartitemsFormat {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.title{
+  font-family: "Poppins-Regular";
+  font-size: 16px;
+  color: #000000;
+}
+.subProductTop{
+display: flex;
+align-items: center;
+gap: 10px;
+}
+p{
+  margin: 0;
+}
+.cartitemsQuantity{
+  font-family:"Poppins-Light" ;
+  font-size: 16px;
+  color: #000000;
+}
+.cartitemsQuantityx{
+  font-family:"Poppins-Light" ;
+  font-size: 12px;
+  color: #000000;
+}
+.cartitemsQuantityprise{
+  font-family: "Poppins-Medium";
+  font-size: 12px;
+  color: #b88e2f;
+}
+.cartitemsQuantityTO{
+  display: flex;
+  gap: 10px;
+  font-family:"Poppins-Light" ;
+  font-size: 16px;
+  color: #000000;
+}
+.cartitemsRemoveIcon {
+  position: absolute;
+  cursor: pointer;
+  width: 20px;
+  height: 13px;
+  top: 0;
+  right: 0;
+}
+.cartitemsDown {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 28px;
+}
+
+.cartitemsTotal {
+  width: 100%;
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  gap: 170px;
+  font-size: 18px;
+  
+}
+.cartitemsTotal p{
+  font-family: "Poppins-Regular";
+  font-size: 16px;
+  color: #000000;
+}
+.cartitemsTotal label{
+  font-family: "Poppins-SemiBold";
+  font-size: 16px;
+  color: #b88e2f;
+}
+.cartBut{
+  border: none;
+  border-top: 1px solid #9d9d9d;
+  width: 100%;
+}
+.cartBut button {
+  width: 87px;
+  height: 30px;
+  background-color: transparent;
+  color: #000000;
+  font-family: "Poppins-Regular";
+  font-size: 12px;
+  border: 1px solid #000000;
+  padding: 6px 30px;
+  cursor: pointer;
+  border-radius: 50px;
+  margin-top: 20px;
+}
+.cartitemsScrollable {
+  flex-grow: 1;
+  overflow-y: auto; 
+  margin-bottom: 100px; 
+  padding-right: 5px; 
+}
+
+
+
+@media only screen and (max-width:850px){
+  .cartitems {
+    width: 320px;
+  }
+}

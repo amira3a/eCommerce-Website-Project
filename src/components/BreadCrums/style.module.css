@@ -1,0 +1,25 @@
+.breadcrum{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: #9f9f9f;
+    font-size: 16px;
+    font-family: "Poppins-Regular";
+    margin-top: 10px;
+    padding: 32px 7%;
+    text-transform: capitalize;
+    background-color: #f9f1e7;
+}
+.breadcrum hr {
+    border: none;
+    border-left: 2px solid #9f9f9f;
+    height: 37px;
+    margin: 0;
+}
+.breadcrum label{
+    color: #000000;
+}
+a{
+    text-decoration: none;
+    color: black;
+}

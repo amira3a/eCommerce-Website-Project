@@ -1,0 +1,43 @@
+#features{
+    display: flex;
+    justify-content: space-around;
+    background-color: #faf3ea;
+    height: 210px;
+    /* gap: 30px; */
+    padding: 30px 0px;
+    margin: 50px 0px;
+}
+.desDiv{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.des{
+    display: flex;
+    flex-direction: column;
+}
+.des h2{
+    margin: 0;
+    font-family: "Poppins-SemiBold";
+    font-size: 25px;
+    line-height: 150%;
+    color: #242424;
+}
+.des label{
+    font-family: "Poppins-Medium";
+    font-size: 20px;
+    line-height: 150%;
+    color: #898989;
+}
+
+@media only screen and (max-width:850px){
+    #features{
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    height: 95%;
+}
+.desDiv{
+    width: 41%;
+}
+}
