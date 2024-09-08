@@ -7,9 +7,6 @@ const ShopContextProvider = (props) => {
   const [products, setProducts] = useState([]);
   const [cartItems, setCartItems] = useState({});
 
-
-
-
   useEffect(() => {
     const fetchProducts = async () => {
       const productsData = await AllProducts();
@@ -43,7 +40,7 @@ const ShopContextProvider = (props) => {
   const addToCart = (itemId, quantity) => {
     setCartItems((prev) => ({
       ...prev,
-      [itemId]: (prev[itemId] || 0) + quantity, 
+      [itemId]: (prev[itemId] || 0) + quantity,
     }));
   };
 
@@ -54,6 +51,17 @@ const ShopContextProvider = (props) => {
     }));
   };
 
+  // const getTotalCartAmount = () => {
+  //   let totalAmount = 0;
+  //   for (const item in cartItems) {
+  //     if (cartItems[item] > 0) {
+  //       let itemInfo = products.find((product) => product.id === Number(item));
+  //       totalAmount += itemInfo.price * cartItems[item];
+  //     }
+  //   }
+  //   return totalAmount;
+  // };
+
   const getTotalCartAmount = () => {
     let totalAmount = 0;
     for (const item in cartItems) {
@@ -62,7 +70,7 @@ const ShopContextProvider = (props) => {
         totalAmount += itemInfo.price * cartItems[item];
       }
     }
-    return totalAmount;
+    return parseFloat(totalAmount.toFixed(2));
   };
 
   const getTotalCartItems = () => {
@@ -82,7 +90,6 @@ const ShopContextProvider = (props) => {
     cartItems,
     addToCart,
     removeFromCart,
-    
   };
 
   return (
