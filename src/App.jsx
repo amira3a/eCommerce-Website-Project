@@ -24,7 +24,7 @@ function App() {
               element={<Shop banner={banner} banText="Shop" />}
             />
             <Route
-              path="dining"
+              path="dinning"
               element={
                 <ShopCategory
                   banner={banner}

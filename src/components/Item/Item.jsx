@@ -9,7 +9,7 @@ const Item = (props) => {
   return (
     <div className={style.item}>
       <Link to={`/product/${props.id}`}>
-        <img onClick={window.scrollTo(0, 0)} src={props.image} alt="" />
+        <img onClick={window.scrollTo(0, 0)} src={props.image} alt="product" />
         <div className={style.overlay}>
           <button
             

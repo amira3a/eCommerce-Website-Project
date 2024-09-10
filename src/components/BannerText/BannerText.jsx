@@ -8,10 +8,10 @@ export default function BannerText(props) {
   return (
     <>
       <div className={style.pageTitle}>
-        <img src={logo} alt="" />
+        <img src={logo} alt="logo" />
         <p>{props.banText}</p>
         <p id={style.crumb}>
-          <Link to="/">Home</Link> <img src={RightArrow} alt="" width={15} />{" "}
+          <Link to="/">Home</Link> <img src={RightArrow} alt="rightArrow" width={15} />{" "}
           <span>{props.banText}</span>
         </p>
       </div>

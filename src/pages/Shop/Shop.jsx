@@ -20,7 +20,7 @@ const selectedProducts = products.slice(
 
   return (
     <div>
-      <img className="banner" src={props.banner} alt="" height={300} />
+      <img className="banner" src={props.banner} alt="banner" height={300} />
       <BannerText banText={props.banText} />
       <div className={style.shopCategoryProducts}>
         {selectedProducts.map((item, i) => {

@@ -49,7 +49,7 @@ export const CartSidebar = () => {
       }`}
     >
       <div className={style.cartitemsCloseIcon} onClick={toggleVisibility}>
-        <img src={close_icon} alt="Close" />
+        <img src={close_icon} alt="closeIcon" />
       </div>
       <div className={style.cartitemsFormatMain}>Shopping Cart</div>
       <hr className={style.hr} />
@@ -66,7 +66,7 @@ export const CartSidebar = () => {
                 >
                   <img
                     src={e.image}
-                    alt=""
+                    alt="product"
                     className={style.carticonProductIcon}
                   />
                   <div className={style.subProduct}>
@@ -89,7 +89,7 @@ export const CartSidebar = () => {
                     onClick={() => {
                       removeFromCart(e.id);
                     }}
-                    alt=""
+                    alt="removeIcon"
                     width={30}
                   />
                 </div>

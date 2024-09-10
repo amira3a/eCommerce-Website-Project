@@ -30,7 +30,7 @@ export const CartItems = () => {
                   >
                     <img
                       src={e.image}
-                      alt=""
+                      alt="product"
                       className={style.carticonProductIcon}
                     />
                     <p>{e.title}</p>
@@ -45,7 +45,7 @@ export const CartItems = () => {
                       onClick={() => {
                         removeFromCart(e.id);
                       }}
-                      alt=""
+                      alt="removeIcon"
                       width={30}
                     />
                   </div>

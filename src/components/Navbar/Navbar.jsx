@@ -16,7 +16,7 @@ export const Navbar = () => {
     <div className={style.navbar}>
       <div className={style.navLogo}>
         <Link to="/">
-          <img src={logo} alt="" />
+          <img src={logo} alt="logo" />
         </Link>
       </div>
       <ul className={style.navMenu}>
@@ -31,7 +31,7 @@ export const Navbar = () => {
         </li>
       </ul>
       <div onClick={toggleVisibility} className={style.loginCartLogo}>
-        <img src={cartLogo} alt="" className={style.cartIcon} />
+        <img src={cartLogo} alt="cartLogo" className={style.cartIcon} />
         <div className={style.cartCounter}>{getTotalCartItems()}</div>
       </div>
     </div>

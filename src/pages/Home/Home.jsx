@@ -12,27 +12,27 @@ export default function Home(props) {
 
   return (
     <div>
-      <img className="banner" src={props.banner} alt="" height={300} />
+      <img className="banner" src={props.banner} alt="banner" height={300} />
       <div id={style.categories}>
         Categories
         <div id={style.categoryLinks}>
           <div
             className={style.categoryLink}
           >
-            <Link to="dining">
-              <img src={dinning} />
+            <Link to="dinning">
+              <img src={dinning} alt="dinning"/>
             </Link>
             Dinnig
           </div>
           <div className={style.categoryLink}>
             <Link to="living">
-              <img src={living} />
+              <img src={living} alt="living" />
             </Link>
             Living
           </div>
           <div className={style.categoryLink}>
             <Link to="bedroom">
-              <img src={bedroom} />
+              <img src={bedroom} alt="bedroom"/>
             </Link>
             Bedroom
           </div>

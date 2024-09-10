@@ -56,16 +56,16 @@ const renderStars = (rating) => {
       <div className={style.productdisplay}>
         <div className={style.productdisplayLeft}>
           <div className={style.productdisplayImgList}>
-            <img src={product.image} alt="" />
-            <img src={product.image} alt="" />
-            <img src={product.image} alt="" />
-            <img src={product.image} alt="" />
+            <img src={product.image} alt="product" />
+            <img src={product.image} alt="product" />
+            <img src={product.image} alt="product" />
+            <img src={product.image} alt="product" />
           </div>
           <div className={style.productdisplayImg}>
             <img
               className={style.productdisplayMainImg}
               src={product.image}
-              alt=""
+              alt="mainProduct"
             />
           </div>
         </div>

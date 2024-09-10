@@ -57,7 +57,7 @@ export default function Contact(props) {
 
   return (
     <>
-      <img className="banner" src={props.banner} alt="" height={300} />
+      <img className="banner" src={props.banner} alt="banner" height={300} />
       <BannerText banText={props.banText } />
       <div className={styles.info}>
         <h2>Get In Touch With Us</h2>
@@ -71,14 +71,14 @@ export default function Contact(props) {
         <div className={styles.contactDetails}>
           <div className={styles.topTitle}>
             <div className={styles.title}>
-              <img src={add} alt="" />
+              <img src={add} alt="add" />
             </div>
             <label>Address</label>
             <p>236 5th SE Avenue, New York NY10000, United States</p>
           </div>
           <div className={styles.topTitle}>
             <div className={styles.title}>
-              <img src={phone} alt="" />
+              <img src={phone} alt="phone" />
             </div>
             <label>Phone</label>
             <p>Mobile: +1 (84) 546-6789</p>
@@ -86,7 +86,7 @@ export default function Contact(props) {
           </div>
           <div className={styles.topTitle}>
             <div className={styles.title}>
-              <img src={clock} alt="" />
+              <img src={clock} alt="clock" />
             </div>
             <label>Working Time</label>
             <p>Monday-Friday: 9:00 - 22:00</p>
