@@ -38,18 +38,27 @@ const ShopContextProvider = (props) => {
   // };
 
   const addToCart = (itemId, quantity) => {
-    setCartItems((prev) => ({
-      ...prev,
-      [itemId]: (prev[itemId] || 0) + quantity,
-    }));
+    setCartItems((prev) => {
+      const updatedCart = {
+        ...prev,
+        [itemId]: (prev[itemId] || 0) + quantity,
+      };
+      alert(`Added ${quantity} of product to the cart.`);
+      return updatedCart;
+    });
   };
 
   const removeFromCart = (itemId) => {
-    setCartItems((prev) => ({
-      ...prev,
-      [itemId]: prev[itemId] - 1,
-    }));
+    setCartItems((prev) => {
+      const updatedCart = {
+        ...prev,
+        [itemId]: prev[itemId] - 1,
+      };
+      alert(`Removed 1 of product from the cart.`);
+      return updatedCart;
+    });
   };
+
 
   // const getTotalCartAmount = () => {
   //   let totalAmount = 0;
