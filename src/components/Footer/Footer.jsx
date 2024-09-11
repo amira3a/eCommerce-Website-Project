@@ -7,21 +7,23 @@ export const Footer = () => {
   const [error, setError] = useState("");
 
   
-  const validateEmail = (email) => {
-    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return re.test(email);
-  };
+  // const validateEmail = (email) => {
+  //   const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  //   return re.test(email);
+  // };
 
  
   const handleSubmit = (e) => {
     e.preventDefault(); 
-    if (validateEmail(email)) {
+    if (email) {
       setError(""); 
       alert("Subscribed successfully!");
       
-    } else {
-      alert("Please enter a valid email address.");
     }
+    // else {
+    //   alert("Please enter a valid email address.");
+    // }
+    setEmail("")
   };
 
   const handleLinkClick = () => {
@@ -71,6 +73,7 @@ export const Footer = () => {
               placeholder="Enter Your Email Address"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
+              required
             />
             <button className={style.sub} type="submit">
               SUBSCRIBE
